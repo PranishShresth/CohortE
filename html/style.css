@@ -1,0 +1,19 @@
+body {
+  background: #dbe6f6; /* fallback for old browsers */
+}
+
+.first {
+  color: rgb(255, 0, 255);
+}
+
+.second {
+  color: #123cdf;
+}
+
+.third {
+  color: hsl(0, 100%, 50%);
+}
+
+.fourth {
+  color: rgba(255, 0, 255, 0.5);
+}
