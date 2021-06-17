@@ -11,9 +11,22 @@ body {
 }
 
 .third {
-  color: hsl(0, 100%, 50%);
+  color: hsl(258, 58%, 52%);
 }
 
 .fourth {
   color: rgba(255, 0, 255, 0.5);
+}
+
+#box1,
+#box2 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+#box2 {
+  width: calc(100% - 200px);
+  background-color: red;
 }
