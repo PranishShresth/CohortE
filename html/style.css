@@ -25,7 +25,12 @@ body {
 #box2,
 #box3,
 #box4,
-#box5 {
+#box5,
+#box6,
+#box7,
+#box8,
+#box9,
+#box10 {
   width: 200px;
   height: 200px;
   background-color: black;
@@ -55,4 +60,26 @@ body {
     -9px 21px 18px 0px #fff212, -9px 6px 11px 0px #ff0808,
     -11px -9px 11px 0px #fffa17, -11px -9px 11px 0px #fffa17,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#box6 {
+  transform: translateX(80%);
+}
+
+#box7 {
+  transform: rotate(30deg);
+}
+
+#box8 {
+  transform: skewX(30deg);
+  margin-top: 20px;
+  height: 100px;
+}
+
+#box9 {
+  transform: translateX(400px) scale(2);
+}
+
+#box10 {
+  transform: perspective(400px) rotateY(50deg);
 }
