@@ -1,11 +1,19 @@
 <html>
   <head>
     <style>
+      * {
+        /* universal selector*/
+        background-color: bisque;
+      }
       h1 {
+        /* tag selector*/
+
         color: tomato;
       }
 
       .first {
+        /* class selector*/
+
         color: blue;
       }
       .second {
@@ -13,11 +21,26 @@
       }
 
       #block {
+        /* id selector*/
+
         color: aqua;
       }
 
       a[href="#"] {
+        /* attribute selector*/
+
         color: red;
+      }
+
+      .parent .child {
+        /* descendent selector*/
+
+        color: rebeccapurple;
+      }
+      .parent > .child {
+        /* child selector*/
+
+        font-size: 24px;
       }
     </style>
   </head>
@@ -33,5 +56,14 @@
     <a href="#">Link</a>
 
     <p style="color: red">This a colored p</p>
+    <div class="parent">
+      <div class="child">Child 1</div>
+      <div class="child">
+        Child 2
+
+        <div class="child">Child 4</div>
+      </div>
+      <div class="child">Child 3</div>
+    </div>
   </body>
 </html>
