@@ -9,17 +9,23 @@
         src: url("./unsteady\ oversteer.ttf");
       }
       html {
-        font-family: pranish;
-        font-size: 100px;
+        font-size: 10px;
       }
       .pixels {
+        font-family: pranish;
+
         font-size: 100px;
       }
       .rem {
+        font-weight: bolder;
         font-family: "Poppins", sans-serif;
         font-size: 0.5rem;
+        font-style: italic;
       }
       .em {
+        font-weight: 100;
+        font-style: oblique;
+
         font-size: 1em;
       }
       .vw {
@@ -27,6 +33,18 @@
       }
       .vh {
         font-size: 10vh;
+      }
+      img {
+        vertical-align: middle;
+      }
+      .indent {
+        text-indent: 3em;
+        font-size: 4rem;
+      }
+      .outdent {
+        text-indent: -3em;
+        font-size: 4rem;
+        margin-left: 3em;
       }
     </style>
   </head>
@@ -40,5 +58,30 @@
     </div>
     <p class="vw">VW</p>
     <p class="vh">VH</p>
+    <h1>Formating and Decorations</h1>
+    <p style="font-size: 4rem; text-align: center">Bring to center</p>
+    <p style="font-size: 4rem; text-align: right">Bring to right</p>
+    <p style="font-size: 4rem; text-align: left">Bring to left</p>
+
+    <h1>Align</h1>
+    <p style="font-size: 4rem">
+      <img
+        src="https://images.pexels.com/photos/7840852/pexels-photo-7840852.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        width="100"
+        height="100"
+      />
+      Text to align
+    </p>
+    <h1>Indent/Outdent</h1>
+    <p class="indent">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem at
+      ea repellendus incidunt quia, cumque ex fugiat ratione nesciunt pariatur!
+      Voluptates aliquid fugit omnis. Fugiat ut fuga officia ratione.
+    </p>
+    <p class="outdent">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem at
+      ea repellendus incidunt quia, cumque ex fugiat ratione nesciunt pariatur!
+      Voluptates aliquid fugit omnis. Fugiat ut fuga officia ratione.
+    </p>
   </body>
 </html>
