@@ -10,6 +10,7 @@
         background-color: aqua;
         left: 50%;
         top: 50%;
+        z-index: -1;
         /*
       vertically */
         transform: translateY(-50%);
@@ -52,6 +53,30 @@
       .a h1 {
         position: sticky;
         top: 0px;
+      }
+
+      .z1 {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        position: absolute;
+        z-index: 2;
+      }
+
+      .z2 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: absolute;
+        z-index: 1;
+      }
+      .z3 {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        position: absolute;
+        left: 20px;
+        z-index: 3;
       }
     </style>
   </head>
@@ -267,6 +292,13 @@
         architecto pariatur aliquam, natus odio optio. Harum atque quod expedita
         illo?
       </p>
+    </div>
+
+    <h1>Z index</h1>
+    <div class="zIndex">
+      <div class="z1"></div>
+      <div class="z2"></div>
+      <div class="z3"></div>
     </div>
   </body>
 </html>
