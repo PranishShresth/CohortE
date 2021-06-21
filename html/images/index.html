@@ -67,6 +67,12 @@
       .bg5 {
         filter: sepia(50%) saturate(70%);
       }
+      .bg6 {
+        background: url("https://images.pexels.com/photos/7903158/pexels-photo-7903158.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+          url("https://images.pexels.com/photos/2691778/pexels-photo-2691778.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+          url("https://images.pexels.com/photos/7392701/pexels-photo-7392701.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        background-blend-mode: overlay, multiply, screen, difference;
+      }
     </style>
   </head>
   <body>
@@ -96,6 +102,41 @@
       <div class="backgroundImage bg3"></div>
       <div class="backgroundImage bg4"></div>
       <div class="backgroundImage bg5"></div>
+      <h1>Blending</h1>
+      <div class="backgroundImage bg6"></div>
+    </div>
+    <div>
+      <h1>Gradients</h1>
+      <div style="background: linear-gradient(orange, black); margin: 2rem">
+        Orange and blcick
+      </div>
+      <div
+        style="background: linear-gradient(to right, gray, red); margin: 2rem"
+      >
+        To right
+      </div>
+      <div
+        style="
+          background: linear-gradient(to left, purple, orange);
+          margin: 2rem;
+        "
+      >
+        To right
+      </div>
+
+      <h2>Radial</h2>
+      <div
+        style="
+          background: radial-gradient(
+            circle farthest-side at 100% 20%,
+            yellow,
+            orange
+          );
+          margin: 2rem;
+        "
+      >
+        To right
+      </div>
     </div>
   </body>
 </html>
