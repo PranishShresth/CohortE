@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .after_before::after {
+        content: "  Satvik";
+      }
+      .after_before::before {
+        content: "Hi,  ";
+      }
+
+      .link:link {
+        /* unvisited*/
+        color: red;
+      }
+      .link:visited {
+        /* visited*/
+
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo selectors</h1>
+    <div class="after_before">Hello world</div>
+    <a href="#" class="link">Link me to website</a>
+    <div class="hover">Button</div>
+  </body>
+</html>
