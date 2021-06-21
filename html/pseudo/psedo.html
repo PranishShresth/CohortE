@@ -18,6 +18,20 @@
 
         color: blue;
       }
+
+      .hover:hover {
+        background-color: aquamarine;
+      }
+
+      .focus:focus {
+        background-color: red;
+      }
+      div:nth-of-type(2) {
+        color: red;
+      }
+      div:nth-child(2) {
+        color: blueviolet !important;
+      }
     </style>
   </head>
   <body>
@@ -25,5 +39,14 @@
     <div class="after_before">Hello world</div>
     <a href="#" class="link">Link me to website</a>
     <div class="hover">Button</div>
+
+    <!-- Focus -->
+    <!-- focus,checked,disabled,enabled,required,optional,selected -->
+    <input type="text" class="focus" required />
+
+    <!-- nth of type,nth child,onlychild, first:child, last-child,first of type -->
+    <div class="container">
+      <h1>Hello child</h1>
+    </div>
   </body>
 </html>
