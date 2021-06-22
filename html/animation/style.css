@@ -1,0 +1,64 @@
+.leftToRight {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+  animation-name: lToR;
+  position: relative;
+  animation-duration: 8s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 3;
+  animation-fill-mode: backwards;
+}
+
+@keyframes lToR {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 70%;
+  }
+}
+
+.hoverAnimation {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 100px;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+.hoverAnimation:hover {
+  animation-name: hover;
+  animation-duration: 2s;
+
+  animation-timing-function: ease-in-out;
+}
+@keyframes hover {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(3);
+  }
+}
+
+.rotationAnimation {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 100px;
+  background-color: aquamarine;
+  cursor: pointer;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
