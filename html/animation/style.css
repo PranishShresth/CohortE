@@ -13,11 +13,13 @@
 
 @keyframes lToR {
   from {
+    transform: rotate(0deg);
     left: 0;
   }
 
   to {
     left: 70%;
+    transform: rotate(540deg);
   }
 }
 
@@ -52,7 +54,7 @@
   background-color: aquamarine;
   cursor: pointer;
   animation: rotate 2s linear infinite;
-  transform-origin: top left;
+  transform-origin: left top;
 }
 @keyframes rotate {
   0% {
@@ -168,4 +170,23 @@ body {
   35% {
     transform: translateY(0px);
   }
+}
+
+.transition {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 100px;
+  position: relative;
+  clip-path: circle(50%);
+  background-color: rgb(21, 119, 98);
+  opacity: 1;
+
+  transition: width 2s linear;
+}
+
+.transition:hover {
+  /* background-color: bisque; */
+  /* opacity: 0; */
+  width: 500px;
 }
