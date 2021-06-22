@@ -30,6 +30,29 @@
         list-style: lower-greek;
         list-style-position: outside;
       }
+
+      table {
+        margin: 0.5rem;
+      }
+      td,
+      th {
+        padding: 0.6rem;
+        border: 1px solid black;
+      }
+      th {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: left;
+        background-color: antiquewhite;
+      }
+
+      .input1 {
+        border: 0;
+        background-color: #e4f0f6;
+        padding: 10px;
+        outline: none;
+        border-radius: 9999px;
+      }
     </style>
   </head>
   <body>
@@ -80,8 +103,26 @@
     </ol>
 
     <table>
-      <thead></thead>
-      <tbody></tbody>
+      <thead>
+        <th>Book</th>
+        <th>Author</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MERN</td>
+          <td>Satvik</td>
+        </tr>
+        <tr>
+          <td>MERN 2</td>
+          <td>Harsh</td>
+        </tr>
+      </tbody>
     </table>
+
+    <!-- Form -->
+    <form>
+      <label for="input1">User name</label>
+      <input type="text" class="input1" id="input1" />
+    </form>
   </body>
 </html>
