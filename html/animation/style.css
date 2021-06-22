@@ -116,7 +116,7 @@
 }
 
 body {
-  animation: bgColorChange 5s 2;
+  /* animation: bgColorChange 5s 2; */
 }
 @keyframes bgColorChange {
   0% {
@@ -133,5 +133,39 @@ body {
 
   90% {
     background-color: red;
+  }
+}
+.bounce {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 100px;
+  position: relative;
+  clip-path: circle(50%);
+  background-color: chocolate;
+  animation: bounce 5s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-48px);
+  }
+  30% {
+    transform: translateY(-35px);
+  }
+  40% {
+    transform: translateY(-24px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  82% {
+    transform: translateY(-4px);
+  }
+  100%,
+  25%,
+  70%,
+  35% {
+    transform: translateY(0px);
   }
 }
