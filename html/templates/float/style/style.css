@@ -17,6 +17,9 @@ body {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+}
 /* navigation  */
 #navigation {
   padding: 1.1rem 0;
@@ -24,6 +27,8 @@ body {
   top: 0;
   border-bottom: 1px solid var(--border-color);
   width: 80%;
+  z-index: 4;
+  background-color: white;
 }
 .site_header {
   float: left;
@@ -52,6 +57,27 @@ main {
   clear: both;
   padding-top: 80px;
 }
+
+.hero_left,
+.hero_right {
+  width: 50%;
+  float: left;
+}
 .hero_left img {
   width: 100%;
+}
+
+.hero_right > * {
+  padding: 0.4rem 0.5rem;
+}
+.hero_right h1 {
+  text-transform: uppercase;
+  line-height: 42px;
+}
+.hero_desc {
+  text-align: justify;
+}
+
+.heroContainer {
+  clear: left;
 }
