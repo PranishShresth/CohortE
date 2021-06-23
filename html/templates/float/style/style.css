@@ -3,6 +3,10 @@
 :root {
   --border-color: #e6e6e6;
 }
+
+section {
+  clear: left;
+}
 * {
   margin: 0;
   padding: 0;
@@ -80,4 +84,11 @@ main {
 
 .heroContainer {
   clear: left;
+}
+
+/* BlogContainer */
+.blog {
+  width: 33.333%;
+  float: left;
+  padding: 10px;
 }
