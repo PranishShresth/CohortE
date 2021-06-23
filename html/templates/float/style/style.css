@@ -92,3 +92,6 @@ main {
   float: left;
   padding: 10px;
 }
+.blog_image img {
+  height: 200px;
+}
