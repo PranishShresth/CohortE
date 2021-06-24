@@ -91,7 +91,7 @@ main {
 .blog {
   width: 33.333%;
   float: left;
-  padding: 10px 10px 10px 0;
+  padding: 2.2rem 10px 10px 0;
 }
 .blog_image img {
   height: 200px;
@@ -102,4 +102,9 @@ main {
 .blog_content h1 {
   font-weight: 500;
   letter-spacing: 0.1em;
+}
+.blog_author {
+  color: #666;
+  text-transform: uppercase;
+  font-size: 12px;
 }
