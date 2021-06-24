@@ -113,5 +113,34 @@ footer {
   background-color: black;
   clear: left;
   height: 250px;
+  padding: 3rem 0;
   color: white;
+}
+.footerContainer {
+  padding: 1.2rem 0;
+}
+.footer_column {
+  float: left;
+  width: 45%;
+}
+.subscribe_input {
+  border: 0;
+  outline: none;
+  margin: 0.4rem 0;
+  width: 80%;
+  padding: 0.5rem;
+}
+
+.subscribe_btn {
+  border: 0;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  /* margin: 0.4rem 0; */
+  padding: 0.5rem;
+}
+.footer_column a {
+  color: white;
+  text-decoration: none;
+  margin: 2px 0;
 }
