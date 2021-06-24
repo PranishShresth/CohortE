@@ -55,7 +55,9 @@ img {
   color: black;
   padding: 10px;
 }
-
+.nav_link:hover {
+  border-bottom: 2px solid black;
+}
 /* main 1st section */
 main {
   clear: both;
@@ -112,7 +114,7 @@ main {
 footer {
   background-color: black;
   clear: left;
-  height: 250px;
+  overflow: hidden;
   padding: 3rem 0;
   color: white;
 }
@@ -121,6 +123,7 @@ footer {
 }
 .footer_column {
   float: left;
+  margin-top: 1rem;
   width: 45%;
 }
 .subscribe_input {
@@ -143,4 +146,38 @@ footer {
   color: white;
   text-decoration: none;
   margin: 2px 0;
+}
+.footer_column p {
+  color: #666;
+  padding: 10px 0;
+}
+
+/* <=576px -small screens  */
+/* >=576px and <=768px medium screens */
+/* 992px */
+/* 1200px */
+/* 1400px */
+
+@media screen and (max-width: 768px) {
+  .blog {
+    width: 50%;
+  }
+  .hero_left,
+  .hero_right {
+    width: 100%;
+  }
+  .content_wrapper,
+  #navigation {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .blog,
+  .footer_column {
+    width: 100%;
+  }
+  .content_wrapper.#navigation {
+    width: 95%;
+  }
 }
