@@ -53,7 +53,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
 }
 .nav_link:hover {
   border-bottom: 2px solid black;
@@ -96,7 +96,7 @@ main {
   padding: 2.2rem 10px 10px 0;
 }
 .blog_image img {
-  height: 200px;
+  height: 250px;
 }
 .blog_content > * {
   padding-top: 0.2rem;
@@ -159,6 +159,9 @@ footer {
 /* 1400px */
 
 @media screen and (max-width: 768px) {
+  .hero_left img {
+    height: 100%;
+  }
   .blog {
     width: 50%;
   }
@@ -177,7 +180,11 @@ footer {
   .footer_column {
     width: 100%;
   }
-  .content_wrapper.#navigation {
+  html {
+    font-size: 14px;
+  }
+  .content_wrapper,
+  #navigation {
     width: 95%;
   }
 }
