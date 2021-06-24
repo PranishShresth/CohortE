@@ -152,6 +152,17 @@ footer {
   padding: 10px 0;
 }
 
+/* contact Page */
+.contactContainer {
+  padding: 2rem 0;
+}
+.contact_left,
+.contact_right {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
 /* <=576px -small screens  */
 /* >=576px and <=768px medium screens */
 /* 992px */
