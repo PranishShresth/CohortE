@@ -157,7 +157,7 @@ footer {
 /* 992px */
 /* 1200px */
 /* 1400px */
-
+/* responsive tags */
 @media screen and (max-width: 768px) {
   .hero_left img {
     height: 100%;
