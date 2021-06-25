@@ -2,6 +2,7 @@
 
 :root {
   --border-color: #e6e6e6;
+  --text-secondary-color: #666;
 }
 
 section {
@@ -106,7 +107,7 @@ main {
   letter-spacing: 0.1em;
 }
 .blog_author {
-  color: #666;
+  color: var(--text-secondary-color);
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -148,7 +149,7 @@ footer {
   margin: 2px 0;
 }
 .footer_column p {
-  color: #666;
+  color: var(--text-secondary-color);
   padding: 10px 0;
 }
 
@@ -193,6 +194,31 @@ textarea {
   cursor: pointer;
   border: 0;
 }
+
+/* about page */
+#aboutContainer > p {
+  padding: 0.4rem 0.4rem 0.4rem 0;
+  line-height: 1.6em;
+  font-size: 1.05rem;
+  width: 80%;
+  text-align: justify;
+}
+#teamContainer h2,
+#aboutContainer h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+}
+.team {
+  float: left;
+  width: 33.33333%;
+  padding: 10px 10px 10px 0;
+}
+#aboutContainer,
+#teamContainer {
+  margin: 2rem 0;
+}
+
 /* <=576px -small screens  */
 /* >=576px and <=768px medium screens */
 /* 992px */
