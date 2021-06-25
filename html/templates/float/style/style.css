@@ -154,7 +154,8 @@ footer {
 
 /* contact Page */
 .contactContainer {
-  padding: 2rem 0;
+  padding: 4rem 0;
+  height: 500px;
 }
 .contact_left,
 .contact_right {
@@ -162,10 +163,10 @@ footer {
   width: 50%;
   padding: 0 10px;
 }
-.contact_left img {
+/* .contact_left img {
   width: 340px;
   height: 340px;
-}
+} */
 .contact_input {
   padding: 8px;
   width: 100%;
@@ -197,7 +198,9 @@ textarea {
     width: 50%;
   }
   .hero_left,
-  .hero_right {
+  .hero_right,
+  .contact_left,
+  .contact_right {
     width: 100%;
   }
   .content_wrapper,
