@@ -200,12 +200,19 @@ textarea {
   padding: 0.4rem 0.4rem 0.4rem 0;
   line-height: 1.6em;
   font-size: 1.05rem;
-  width: 80%;
+  width: 70%;
   text-align: justify;
 }
 #teamContainer h2,
 #aboutContainer h2 {
   text-transform: uppercase;
+
+  animation-name: textAnimation;
+  animation-delay: 2s;
+  animation-direction: both;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  /* animation: textAnimation 3s linear 2s; */
   letter-spacing: 0.1em;
   word-spacing: 0.1em;
 }
@@ -235,11 +242,24 @@ textarea {
 /* 1200px */
 /* 1400px */
 /* responsive tags */
+
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hero_left img {
     height: 100%;
   }
-  .blog {
+  .blog,
+  .team {
     width: 50%;
   }
   .hero_left,
@@ -250,14 +270,17 @@ textarea {
     margin: 2rem 0;
   }
   .content_wrapper,
-  #navigation {
+  #navigation,
+  #aboutContainer > p {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 576px) {
   .blog,
-  .footer_column {
+  .footer_column,
+  .team,
+  #aboutContainer > p {
     width: 100%;
   }
   html {
