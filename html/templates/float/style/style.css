@@ -162,7 +162,27 @@ footer {
   width: 50%;
   padding: 0 10px;
 }
-
+.contact_left img {
+  width: 340px;
+  height: 340px;
+}
+.contact_input {
+  padding: 8px;
+  width: 100%;
+  margin: 5px 0;
+  outline: none;
+  border: 0;
+  background-color: #f7f7f7;
+}
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  resize: vertical;
+  outline: none;
+  border: 0;
+  background-color: #f7f7f7;
+}
 /* <=576px -small screens  */
 /* >=576px and <=768px medium screens */
 /* 992px */
