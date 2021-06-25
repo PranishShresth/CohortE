@@ -219,6 +219,16 @@ textarea {
   margin: 2rem 0;
 }
 
+.teamMember_name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.teamMember_position {
+  text-transform: uppercase;
+  color: var(--text-secondary-color);
+  font-size: 12px;
+}
+
 /* <=576px -small screens  */
 /* >=576px and <=768px medium screens */
 /* 992px */
