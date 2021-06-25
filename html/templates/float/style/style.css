@@ -163,10 +163,10 @@ footer {
   width: 50%;
   padding: 0 10px;
 }
-/* .contact_left img {
-  width: 340px;
-  height: 340px;
-} */
+.contact_left img {
+  /* width: 340px; */
+  height: 100%;
+}
 .contact_input {
   padding: 8px;
   width: 100%;
@@ -183,6 +183,15 @@ textarea {
   outline: none;
   border: 0;
   background-color: #f7f7f7;
+}
+.contact_btn {
+  padding: 8px;
+  outline: 0;
+  width: 50%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 0;
 }
 /* <=576px -small screens  */
 /* >=576px and <=768px medium screens */
