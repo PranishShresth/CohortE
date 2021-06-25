@@ -211,6 +211,7 @@ textarea {
   .contact_left,
   .contact_right {
     width: 100%;
+    margin: 2rem 0;
   }
   .content_wrapper,
   #navigation {
