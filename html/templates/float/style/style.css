@@ -208,10 +208,10 @@ textarea {
   text-transform: uppercase;
 
   animation-name: textAnimation;
-  animation-delay: 2s;
+  /* animation-delay: 2s; */
   animation-direction: both;
   animation-timing-function: ease-out;
-  animation-duration: 1s;
+  animation-duration: 3s;
   /* animation: textAnimation 3s linear 2s; */
   letter-spacing: 0.1em;
   word-spacing: 0.1em;
