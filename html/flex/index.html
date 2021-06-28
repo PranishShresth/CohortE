@@ -7,26 +7,26 @@
     <title>Flex</title>
     <style>
       .child {
-        flex-basis: 100px;
+        flex: 0 0 16.666666%;
         height: 100px;
         font-size: large;
+        margin: -2px;
         font-weight: 900;
         text-align: center;
         line-height: 100px;
-        margin: 10px;
+
         background-color: antiquewhite;
       }
       .container {
         display: flex;
         height: 100vh;
+        justify-content: space-between;
+        flex-wrap: wrap;
       }
-
-      .child:nth-child(2) {
-        order: 1;
-        flex-grow: 1;
-      }
-      .child:nth-child(1) {
-        flex-grow: 2;
+      @media (max-width: 576px) {
+        .child {
+          flex: 0 0 50%;
+        }
       }
     </style>
   </head>
@@ -36,6 +36,17 @@
       <div class="child">2</div>
       <div class="child">3</div>
       <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
       <div class="child">5</div>
     </div>
   </body>
