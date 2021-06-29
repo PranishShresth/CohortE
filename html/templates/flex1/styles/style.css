@@ -115,6 +115,7 @@ section {
 
 .infoContainer > div {
   flex: 0 0 50%;
+  align-self: center;
 }
 
 .info_background {
@@ -135,4 +136,12 @@ section {
 }
 .info_content_section3 p {
   padding: 24px 0px 24px 0px;
+}
+
+/* section 4 */
+.contactContainer {
+  display: flex;
+}
+.contactContainer > div {
+  flex: 0 0 50%;
 }
