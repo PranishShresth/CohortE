@@ -8,17 +8,68 @@ font-family: 'Vollkorn', serif;
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Vollkorn", serif;
+}
+
 body,
 html {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Vollkorn", serif;
+}
+.content_wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+/* header */
 .landingHeader {
   background: url("../images/bg2.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  position: relative;
   /* background-attachment: fixed; */
   height: 100%;
+}
+
+.navigationBar {
+  display: flex;
+  padding: 0.9rem 0;
+  justify-content: space-between;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+.navLinks a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 12px;
+}
+.navHeader h1 {
+  font-size: 28px;
+}
+.headerTagline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.headerTagline h1 {
+  font-size: 40px;
+  line-height: 1.5em;
+  text-align: center;
 }
