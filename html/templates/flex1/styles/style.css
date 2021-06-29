@@ -67,9 +67,22 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .headerTagline h1 {
   font-size: 40px;
   line-height: 1.5em;
   text-align: center;
+}
+.btn {
+  outline: none;
+  border: 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: medium;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
