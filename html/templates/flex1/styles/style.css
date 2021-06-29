@@ -145,3 +145,15 @@ section {
 .contactContainer > div {
   flex: 0 0 50%;
 }
+#username,
+#email,
+#message {
+  padding: 10px;
+  width: 100%;
+  background: #fafafa;
+  outline: none;
+  border: 1px solid #ccc;
+}
+#message {
+  resize: none;
+}
