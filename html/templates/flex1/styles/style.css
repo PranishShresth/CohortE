@@ -102,7 +102,7 @@ section {
   text-align: left;
 }
 .mission_statement > div {
-  padding: 20px;
+  padding: 20px 20px 20px 0;
 }
 .mission_left {
   font-weight: 800;
@@ -129,4 +129,10 @@ section {
 
 .info_btn {
   background-color: #eeeeee;
+}
+.info_content_section3 {
+  padding-left: 27px;
+}
+.info_content_section3 p {
+  padding: 24px 0px 24px 0px;
 }
