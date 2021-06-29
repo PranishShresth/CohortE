@@ -85,14 +85,20 @@ a {
   cursor: pointer;
   border-radius: 9999px;
 }
-.btn:hover {
+/* .btn:hover {
   background-color: rgba(255, 255, 255, 0.7);
-}
+} */
 
+section {
+  padding: 4rem 0;
+}
 /* section_1 */
+#section_1 {
+  background-color: #e0e0db;
+}
 .mission_statement {
   display: flex;
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
   text-align: left;
 }
 .mission_statement > div {
@@ -100,4 +106,27 @@ a {
 }
 .mission_left {
   font-weight: 800;
+}
+
+/* section_2 */
+.infoContainer {
+  display: flex;
+}
+
+.infoContainer > div {
+  flex: 0 0 50%;
+}
+
+.info_background {
+  background: url("../images/section_2.jpg") center center no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.info_content p {
+  /* padding-right: 70px; */
+  padding: 24px 70px 24px 0;
+}
+
+.info_btn {
+  background-color: #eeeeee;
 }
