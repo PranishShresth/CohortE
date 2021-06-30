@@ -43,7 +43,7 @@ a {
   color: white;
   position: relative;
   /* background-attachment: fixed; */
-  height: 100%;
+  height: calc(100% - 100px);
 }
 
 .navigationBar {
@@ -181,5 +181,27 @@ footer {
 }
 footer a {
   color: black;
-  font-size: 24px;
+  font-size: 18px;
+}
+.social_text {
+  padding-left: 5px;
+}
+
+/* media queries */
+/* 576px,768px,992px,1200px,1440px */
+@media (max-width: 576px) {
+}
+@media (max-width: 768px) {
+  .mission_right {
+    display: none;
+  }
+  .mission_statement {
+    text-align: justify;
+  }
+  .infoContainer {
+    flex-wrap: wrap;
+  }
+  .infoContainer > div {
+    flex: 0 0 100%;
+  }
 }
