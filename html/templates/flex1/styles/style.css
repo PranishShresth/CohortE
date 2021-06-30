@@ -179,3 +179,7 @@ footer {
 .footer_column_right > div {
   padding-left: 2rem;
 }
+footer a {
+  color: black;
+  font-size: 24px;
+}
