@@ -92,6 +92,12 @@ a {
 section {
   padding: 4rem 0;
 }
+
+.section_heading {
+  font-size: 30px;
+  line-height: 34px;
+  padding-right: 40px;
+}
 /* section_1 */
 #section_1 {
   background-color: #e0e0db;
@@ -156,4 +162,14 @@ section {
 }
 #message {
   resize: none;
+}
+
+/* footer */
+footer {
+  background-color: #e0e0db;
+}
+.footerContainer,
+.footer_column_right {
+  display: flex;
+  justify-content: space-between;
 }
