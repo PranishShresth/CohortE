@@ -20,6 +20,7 @@ h6 {
 body,
 html {
   height: 100%;
+  scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
   line-height: 1.6em;
 }
@@ -57,8 +58,8 @@ a {
 }
 .navLinks a {
   font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 700;
+  /* text-transform: uppercase; */
+  font-weight: 600;
   padding-left: 12px;
 }
 .navHeader h1 {
@@ -166,10 +167,15 @@ section {
 
 /* footer */
 footer {
+  padding: 4rem 0;
   background-color: #e0e0db;
 }
 .footerContainer,
 .footer_column_right {
   display: flex;
   justify-content: space-between;
+}
+
+.footer_column_right > div {
+  padding-left: 2rem;
 }
