@@ -207,7 +207,8 @@ footer a {
   .mission_right {
     display: none;
   }
-  .mission_statement {
+  .mission_statement,
+  .info_content p {
     text-align: justify;
   }
   #section_2 .infoContainer {
@@ -221,5 +222,12 @@ footer a {
 
   #section_3 .infoContainer {
     flex-wrap: wrap;
+  }
+  /* contact */
+  .contactContainer {
+    flex-direction: column;
+  }
+  .contactContainer > div {
+    padding: 1rem 0;
   }
 }
