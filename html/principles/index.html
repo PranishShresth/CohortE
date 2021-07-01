@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      color: red;
+    }
+
+    p {
+      color: blue !important;
+    }
+
+    .orange {
+      color: orange;
+    }
+    #green {
+      color: green;
+    }
+
+    .container .child {
+      background-color: red;
+      width: 200px;
+      height: 200px;
+    }
+
+    .child {
+      background-color: blue;
+      width: 200px;
+      height: 200px;
+    }
+    .container .child .another_child .another_another_child {
+    }
+  </style>
+  <body>
+    <!-- Last rule principle -->
+    <p>hello</p>
+    <!-- Specificity principle -->
+    <!--important> style>id>class>selector -->
+    <p class="orange" id="green" style="color: chocolate">Hello world</p>
+
+    <div class="container">
+      <div class="child">
+        <div class="another_child">
+          <div class="another_another_child"></div>
+        </div>
+      </div>
+    </div>
+    <!-- don't be too specific, rule is that don't go more than level -->
+
+    <!-- Inheritance  -->
+  </body>
+</html>

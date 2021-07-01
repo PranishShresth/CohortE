@@ -1,0 +1,53 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 2px solid #ccc; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.content_wrapper {
+  width: 92.5%;
+  margin: 0 auto;
+}
+.nav_links > div {
+  display: inline-block;
+  padding-left: 15px;
+}
+header {
+  padding: 10px 0;
+}
+
+.section_1 {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.section_1 > div {
+  padding: 10px 10px 10px 0;
+}
+.search_bar {
+  flex-grow: 1;
+}
+
+.search_input {
+  width: 100%;
+  padding: 2px;
+}
+.section_2 {
+  background: #5614b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dbd65c,
+    #5614b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dbd65c,
+    #5614b0
+  ); /* W3C, IE 10+/  Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: calc(100vh - 50px);
+}

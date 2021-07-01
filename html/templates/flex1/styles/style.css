@@ -190,6 +190,12 @@ footer a {
 /* media queries */
 /* 576px,768px,992px,1200px,1440px */
 @media (max-width: 576px) {
+  .landingHeader {
+    height: 100% !important;
+  }
+  .content_wrapper {
+    width: 94%;
+  }
   .footerContainer,
   .footer_column_right {
     flex-direction: column;
@@ -201,6 +207,9 @@ footer a {
   }
 }
 @media (max-width: 768px) {
+  .landingHeader {
+    height: calc(100% - 500px);
+  }
   section {
     padding: 1rem 0;
   }
