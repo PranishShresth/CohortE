@@ -47,6 +47,7 @@ section {
 .section_heading {
   color: var(--primary-color);
   font-size: 2rem;
+  padding: 1rem 0;
 }
 /* navBar */
 .background {
@@ -114,6 +115,10 @@ section {
 }
 
 /* projects */
+
+.section_2 {
+  background-color: var(--secondary-color);
+}
 .project img {
   width: 100%;
 }
