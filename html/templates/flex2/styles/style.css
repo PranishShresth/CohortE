@@ -41,6 +41,12 @@ section {
   padding: 2rem 0;
 }
 /* navBar */
+.background {
+  background: url("../images//banner-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .navContainer {
   display: flex;
   justify-content: space-between;
@@ -77,4 +83,8 @@ section {
 }
 .heroImage img {
   width: 100%;
+}
+
+#heroContainer > div {
+  padding: 1rem 0;
 }
