@@ -36,6 +36,8 @@ h6 {
   padding: 12px;
   outline: none;
   border: 0;
+  font-weight: 500;
+  font-size: 1rem;
 }
 section {
   padding: 2rem 0;
@@ -80,6 +82,7 @@ section {
 .hero_name {
   font-size: 2.7rem;
   letter-spacing: 2px;
+  font-weight: 900;
 }
 .heroImage img {
   width: 100%;
@@ -87,4 +90,18 @@ section {
 
 #heroContainer > div {
   padding: 1rem 0;
+}
+
+.btn_primary {
+  background-color: var(--primary-color);
+  color: white;
+  margin-right: 12px;
+}
+
+.heroTagline p {
+  padding: 1rem 0;
+}
+.hero_tag {
+  color: var(--primary-color);
+  font-weight: 700;
 }
