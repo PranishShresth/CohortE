@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Vollkorn&display=swap");
+
+:root {
+  --primary-color: #2b00d4;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content_wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Vollkorn", serif;
+}
+/* navBar */
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.nav_tagline {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+}
