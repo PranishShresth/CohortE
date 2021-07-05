@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Vollkorn&display=swap");
 
+/* global */
 :root {
   --primary-color: #2b00d4;
 }
@@ -31,6 +32,14 @@ h5,
 h6 {
   font-family: "Vollkorn", serif;
 }
+.btn {
+  padding: 12px;
+  outline: none;
+  border: 0;
+}
+section {
+  padding: 2rem 0;
+}
 /* navBar */
 .navContainer {
   display: flex;
@@ -58,4 +67,14 @@ h6 {
 
 .nav_links > a:hover {
   color: var(--primary-color);
+}
+
+/* heroContainer */
+
+.hero_name {
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+}
+.heroImage img {
+  width: 100%;
 }
