@@ -190,3 +190,13 @@ section {
 .blog_heading:hover {
   text-decoration: underline;
 }
+
+/* about */
+
+.about_left > p {
+  text-align: justify;
+  padding: 0.5rem 0;
+}
+.about_right {
+  display: none;
+}
