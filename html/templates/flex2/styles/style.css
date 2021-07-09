@@ -18,6 +18,8 @@
 body {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
+  max-width: 2160px;
+  margin: 0 auto;
 }
 
 a {
@@ -76,8 +78,10 @@ section {
 }
 .nav_links > a {
   padding-left: 0.6rem;
+  font-family: "Vollkorn", serif;
+  font-size: 1rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   transition: color 250ms linear;
 }
 
@@ -129,8 +133,8 @@ section {
 
 .project .project_link {
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: 15px;
+  right: 20px;
   z-index: 2;
 }
 .project_link a {
@@ -199,4 +203,110 @@ section {
 }
 .about_right {
   display: none;
+}
+
+/* footer */
+
+#footerSection {
+  background-color: var(--secondary-color);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_row {
+  margin: 0.6rem 0;
+}
+.footer_row > a {
+  margin: 0 1rem;
+  font-size: 1.4rem;
+  color: #665f82;
+}
+
+/* media queries */
+
+@media screen and (min-width: 576px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 4px; */
+  }
+  .projects > .project {
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding: 10px;
+  }
+  .content_wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+  section {
+    padding: 4rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #heroContainer {
+    display: flex;
+  }
+  .heroTagline {
+    flex: 0 0 50%;
+  }
+  .heroImage {
+    flex: 0 0 50%;
+  }
+
+  .aboutContainer {
+    display: flex;
+    gap: 2rem;
+  }
+  .about_right {
+    display: block;
+    flex: 0 0 50%;
+    align-self: center;
+  }
+  .about_right img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content_wrapper {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #heroContainer {
+    padding: 4rem 0;
+    gap: 1.5rem;
+  }
+  .nav_links {
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+  .projects > .project {
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+    padding: 10px;
+  }
+  .skillsContainer {
+    display: flex;
+  }
+  .skillsContainer .skills_left {
+    max-width: 40%;
+    flex: 0 0 40%;
+  }
+  .skillsContainer .skills_right {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .blog {
+    width: 80%;
+  }
 }
