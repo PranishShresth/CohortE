@@ -10,8 +10,8 @@
         display: grid;
         height: 100vh;
         justify-content: center;
-        grid-template-columns: repeat(5, 200px);
-        grid-template-rows: 200px 200px 200px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(3, 200px);
       }
 
       .child {
