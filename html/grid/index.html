@@ -10,26 +10,42 @@
         display: grid;
         height: 100vh;
         justify-content: center;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        grid-template-rows: repeat(3, 200px);
+        grid-template-areas: "harsh harsh harsh" "satvik satvik aside" "satvik satvik footer";
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 50px 1fr 50px;
+        gap: 10px;
       }
-
-      .child {
+      header {
+        grid-area: harsh;
+        background-color: red;
+      }
+      main {
+        grid-area: satvik;
+        background-color: blue;
+      }
+      aside {
+        grid-area: aside;
+        background-color: yellow;
+      }
+      footer {
+        grid-area: footer;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- .child {
         width: 100%;
         justify-self: center;
         height: 100%;
         align-self: center;
         background-color: antiquewhite;
-      }
-    </style>
-  </head>
-  <body>
+      } -->
     <div class="container">
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>
+      <header></header>
+      <main></main>
+      <aside></aside>
+      <footer></footer>
     </div>
   </body>
 </html>
