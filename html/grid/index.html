@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid!</title>
+    <style>
+      .container {
+        display: grid;
+        height: 100vh;
+        justify-content: center;
+        grid-template-columns: repeat(5, 200px);
+        grid-template-rows: 200px 200px 200px;
+      }
+
+      .child {
+        width: 100%;
+        justify-self: center;
+        height: 100%;
+        align-self: center;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
