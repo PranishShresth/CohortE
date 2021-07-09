@@ -9,19 +9,20 @@
       .container {
         display: grid;
         height: 100vh;
-        justify-content: center;
-        grid-template-areas: "harsh harsh harsh" "satvik satvik aside" "satvik satvik footer";
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows: 50px 1fr 50px;
+
+        grid-template-areas: "harsh harsh harsh" "satvik aside aside" "satvik aside aside" "footer footer footer";
+        grid-template-columns: 200px 200px 1fr;
+        grid-template-rows: 80px 1fr 50px 20px;
         gap: 10px;
       }
       header {
         grid-area: harsh;
-        background-color: red;
+        background-color: black;
+        color: white;
       }
       main {
         grid-area: satvik;
-        background-color: blue;
+        background-color: tomato;
       }
       aside {
         grid-area: aside;
@@ -42,10 +43,18 @@
         background-color: antiquewhite;
       } -->
     <div class="container">
-      <header></header>
-      <main></main>
-      <aside></aside>
-      <footer></footer>
+      <header>
+        <h1>This is my good header</h1>
+      </header>
+      <main>
+        <h1>SideBar</h1>
+      </main>
+      <aside>
+        <h1>Main content</h1>
+      </aside>
+      <footer>
+        <h1>Footer</h1>
+      </footer>
     </div>
   </body>
 </html>
