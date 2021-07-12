@@ -20,14 +20,14 @@
         <ul class="sideNav">
           <li>
             <div class="navLink">
-              <a class="nav_link" href="#">
+              <a class="nav_link active" href="#">
                 <i class="fab fa-twitter"></i>
               </a>
             </div>
           </li>
           <li>
             <div class="navLink">
-              <a class="nav_link" href="#">
+              <a class="nav_link active" href="#">
                 <i class="fas fa-home"></i> <span class="link_text">Home</span>
               </a>
             </div>
@@ -97,7 +97,55 @@
           </li>
         </ul>
       </nav>
-      <main></main>
+      <main>
+        <div class="wrapper">
+          <section class="mainHeader">
+            <h3>Home</h3>
+            <div><i class="far fa-star"></i></div>
+          </section>
+        </div>
+        <div class="hr"></div>
+        <div class="wrapper">
+          <section class="statusBar">
+            <div>
+              <img src="./profile.jpg" class="profile_img" />
+            </div>
+            <div class="statusForm">
+              <form>
+                <input
+                  type="text"
+                  placeholder="What's happening?"
+                  class="twitterField"
+                />
+              </form>
+              <div class="hr"></div>
+
+              <div class="status_utility">
+                <div class="status_left">
+                  <div>
+                    <i class="far fa-smile"></i>
+                  </div>
+                  <div>
+                    <i class="fas fa-puzzle-piece"></i>
+                  </div>
+                  <div>
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                  <div>
+                    <i class="far fa-calendar-alt"></i>
+                  </div>
+                  <div>
+                    <i class="far fa-images"></i>
+                  </div>
+                </div>
+                <div class="status_right">
+                  <button class="btn tweet_btn">Tweet</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
       <aside></aside>
     </div>
   </body>
