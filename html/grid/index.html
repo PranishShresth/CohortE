@@ -9,52 +9,39 @@
       .container {
         display: grid;
         height: 100vh;
-
-        grid-template-areas: "harsh harsh harsh" "satvik aside aside" "satvik aside aside" "footer footer footer";
-        grid-template-columns: 200px 200px 1fr;
-        grid-template-rows: 80px 1fr 50px 20px;
+        grid-auto-columns: 300px;
+        grid-auto-flow: column;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: repeat(3, 200px);
         gap: 10px;
       }
-      header {
-        grid-area: harsh;
-        background-color: black;
-        color: white;
-      }
-      main {
-        grid-area: satvik;
-        background-color: tomato;
-      }
-      aside {
-        grid-area: aside;
-        background-color: yellow;
-      }
-      footer {
-        grid-area: footer;
-        background-color: aquamarine;
+
+      .child {
+        width: 100%;
+
+        justify-self: center;
+        height: clamp(100px, 200px, 400px);
+        align-self: center;
+
+        background-color: antiquewhite;
       }
     </style>
   </head>
   <body>
-    <!-- .child {
-        width: 100%;
-        justify-self: center;
-        height: 100%;
-        align-self: center;
-        background-color: antiquewhite;
-      } -->
     <div class="container">
-      <header>
-        <h1>This is my good header</h1>
-      </header>
-      <main>
-        <h1>SideBar</h1>
-      </main>
-      <aside>
-        <h1>Main content</h1>
-      </aside>
-      <footer>
-        <h1>Footer</h1>
-      </footer>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
     </div>
   </body>
 </html>
