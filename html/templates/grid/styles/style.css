@@ -102,7 +102,7 @@ aside,
 
 .status_utility {
   display: flex;
-  padding: 1rem 0;
+  padding: 1rem 0 0.2rem 0;
   align-items: center;
   justify-content: space-between;
 }
@@ -119,4 +119,8 @@ aside,
   font-weight: 700;
   color: white;
   border-radius: 9999px;
+}
+
+.border {
+  border-top: 10px solid var(--secondary-color);
 }
