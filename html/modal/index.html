@@ -7,21 +7,79 @@
     <title>Document</title>
 
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
       .modal {
         display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .modal_body {
+        position: relative;
+        font-family: "Press Start 2P", cursive;
+        font-size: 24px;
+        background-color: white;
+        width: 300px;
+        padding: 1rem;
+        height: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .modal_active {
+        animation: fadeIn 1s ease;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          background-color: rgba(0, 0, 0, 0);
+        }
+        100% {
+          background-color: rgba(0, 0, 0, 0.7);
+        }
       }
     </style>
   </head>
   <body>
-    <button>Open the modal</button>
+    <button id="open">Open the modal</button>
     <div class="modal">
       <div class="modal_body">
+        <div class="modal_head">
+          <p sty>Grid Game</p>
+          <hr />
+        </div>
         <form>
-          <input type="text" placeholder="Player name" />
-          <button>Play!</button>
+          <input type="text" placeholder="Player name" id="player_input" />
+          <button id="player_btn">Play!</button>
         </form>
       </div>
     </div>
-    <script></script>
+    <script>
+      let modalBtn = document.querySelector("#open");
+      let modal = document.querySelector(".modal");
+
+      modalBtn.addEventListener("click", function () {
+        modal.style.display = "block";
+        modal.classList.add("modal_active");
+      });
+      // load vs DOMContentLoaded
+      window.addEventListener("DOMContentLoaded", function () {
+        modal.style.display = "block";
+      });
+      window.addEventListener("click", function (ev) {
+        if (ev.target.classList[0] === "modal") {
+          modal.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
