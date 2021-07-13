@@ -124,3 +124,31 @@ aside,
 .border {
   border-top: 10px solid var(--secondary-color);
 }
+
+.tweetContainer {
+  padding-top: 1rem;
+}
+.tweet {
+  display: grid;
+  grid-template-columns: 44px auto;
+}
+.tweet__handle {
+  font-weight: 100;
+  padding: 0 5px;
+  color: rgb(91, 112, 131);
+}
+.tweet__timestamp {
+  font-weight: 100;
+  color: rgb(91, 112, 131);
+}
+
+.tweet_content {
+  padding: 1rem 0;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+.tweet_buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
