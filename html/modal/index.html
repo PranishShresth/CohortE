@@ -38,7 +38,54 @@
       .modal_active {
         animation: fadeIn 1s ease;
       }
+      #player_input {
+        width: 100%;
+        padding: 12px;
+        font-family: "Press Start 2P", cursive;
+        margin: 10px 0;
+        background-color: bisque;
+        color: black;
+        font-size: 16px;
+        border: 0;
+        outline: none;
+      }
 
+      #player_btn {
+        border: 0;
+        outline: none;
+        font-family: "Press Start 2P", cursive;
+        background-color: rgb(23, 93, 185);
+        color: white;
+        padding: 0.85em 2em;
+        cursor: pointer;
+        position: relative;
+      }
+      /*#player_btn::after {
+        content: "";
+        z-index: -1;
+        display: block;
+        padding: 0.85em 2em;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        right: 100%;
+        transition: all 1s;
+      }
+
+      #player_btn:hover::after {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: red;
+      }*/
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       @keyframes fadeIn {
         0% {
           background-color: rgba(0, 0, 0, 0);
@@ -51,6 +98,7 @@
   </head>
   <body>
     <button id="open">Open the modal</button>
+    <h1>Hello, <span id="user_name"></span></h1>
     <div class="modal">
       <div class="modal_body">
         <div class="modal_head">
@@ -59,14 +107,46 @@
         </div>
         <form>
           <input type="text" placeholder="Player name" id="player_input" />
-          <button id="player_btn">Play!</button>
+          <div class="center">
+            <button type="submit" id="player_btn">Play!</button>
+          </div>
         </form>
       </div>
     </div>
+
+    <table id="table"></table>
     <script>
       let modalBtn = document.querySelector("#open");
       let modal = document.querySelector(".modal");
+      let form = document.querySelector("form");
+      let input = document.querySelector("#player_input");
+      let playername = document.querySelector("#user_name");
 
+      let table = document.querySelector("#table");
+
+      for (let i = 0; i < 3; i++) {
+        let tr = document.createElement("tr");
+        for (let j = 1; j <= 3; j++) {
+          let td = document.createElement("td");
+          td.id = i * 10 + j;
+          td.innerText = i * 3 + j;
+          tr.appendChild(td);
+        }
+        table.appendChild(tr);
+      }
+
+      form.addEventListener("submit", function (ev) {
+        //prevents reloading
+        ev.preventDefault();
+        const name = input.value;
+        if (name === "") {
+          return;
+        }
+        //set the user name
+        playername.innerText = name;
+        //close the modal
+        modal.style.display = "none";
+      });
       modalBtn.addEventListener("click", function () {
         modal.style.display = "block";
         modal.classList.add("modal_active");
