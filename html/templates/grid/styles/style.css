@@ -216,6 +216,7 @@ aside,
   aside {
     display: block;
     padding: 8px 0;
+    margin: 0 10px;
   }
   .navLink {
     justify-content: flex-start;
@@ -242,7 +243,9 @@ aside,
     display: inline;
     padding-left: 0.9rem;
   }
-
+  main {
+    border-right: 1px solid var(--secondary-color);
+  }
   #search {
     border: 1px solid #ccc;
     outline: none;
@@ -253,13 +256,20 @@ aside,
 
   .headlinesContainer {
     padding: 10px;
-    background-color: var(--secondary-color);
+    background-color: rgba(246, 246, 246, 0.5);
     margin: 10px 0;
     border-radius: 10px;
   }
   .headlineCard {
     display: flex;
     justify-content: space-between;
+    padding: 10px 0;
+    transition: all 300ms ease-out;
+    cursor: pointer;
+  }
+
+  .headlineCard:hover {
+    background-color: var(--secondary-color);
   }
   .headline_left > p {
     font-size: 12px;
