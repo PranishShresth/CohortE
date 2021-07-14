@@ -242,6 +242,7 @@ aside,
   .link_text {
     display: inline;
     padding-left: 0.9rem;
+    font-size: 20px;
   }
   main {
     border-right: 1px solid var(--secondary-color);
@@ -252,6 +253,10 @@ aside,
     padding: 8px;
     width: 100%;
     border-radius: 9999px;
+  }
+
+  #search:focus {
+    border: 1px solid var(--primary-color);
   }
 
   .headlinesContainer {
